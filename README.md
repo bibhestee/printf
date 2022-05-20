@@ -2,8 +2,8 @@ C - PROGRAMMING
 A group project on building a copy of the built-in function ( printf() )
 
 GROUP MEMBERS:
-1 - ABDULLAHI, Abdulbasit
-2 - THOMAS, Christiana
+- ABDULLAHI, Abdulbasit
+- THOMAS, Christiana
 
 Pseudocode
 

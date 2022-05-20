@@ -40,7 +40,11 @@ int _printf(const char *format, ...)
 			count_ch += j;
 			++i;
 		}
-
+		else if (format[i + 1] == '%')
+		{
+			_putchar(format[i + 1]);
+			count_ch += 1;
+		}
 	}
 	va_end(ap);
 	return (count_ch);
