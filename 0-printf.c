@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdarg.h>
+#include <stddef.h>
 
 /**
  * _printf - Prints a format specifiers variable
@@ -8,42 +9,42 @@
  *
  * Return: Returns the total number of printed character
  */
-
 int _printf(const char *format, ...)
 {
-	int i, j, count_ch;
-	char c;
+	int i, count_ch;
+	char *s = NULL;
 
 	va_list ap;
 
 	va_start(ap, format);
 	count_ch = 0;
-
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] != '%')
 		{
 			_putchar(format[i]);
-			count_ch += 1;
+			count_ch++;
 		}
 		else if (format[i + 1] == 'c')
 		{
-			c = va_arg(ap, int);
-			_putchar(c);
-			++i;
-			count_ch += 1;
+			_putchar(va_int);
+			count_ch++, ++i;
 		}
 		else if (format[i + 1] == 's')
 		{
-			print_str(va_arg(ap, char*));
-			j = print_str(va_arg(ap, char*));
-			count_ch += j;
+			s = va_char;
+			print_str(s);
 			++i;
 		}
 		else if (format[i + 1] == '%')
 		{
 			_putchar(format[i + 1]);
-			count_ch += 1;
+			count_ch++, ++i;
+		}
+		else if (format[i + 1] == 'd' || format[i + 1] == 'i')
+		{
+			print_number(va_int);
+			++i;
 		}
 	}
 	va_end(ap);

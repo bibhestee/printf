@@ -4,7 +4,7 @@
 /**
  * print_str - print a string
  * _putchar - print out a character
- * @c: argument that pass the variable
+ * @str: argument that passes the variable
  *
  * Return: Returns the number of character printed
  */
@@ -12,16 +12,21 @@
 
 int print_str(char *str)
 {
-	int i;
+	int i = 0;
 	int j = 0;
 
-	char* c = malloc(sizeof(str));
+	char *c = malloc(sizeof(str) + 1);
+
+	if (c == NULL || str == NULL)
+		return (0);
 
 	c = str;
-	for (i = 0; c[i] != '\0'; i++)
+	while (c[i] != '\0')
 	{
 		_putchar(c[i]);
+		i++;
 		j++;
 	}
+
 	return (j);
 }
