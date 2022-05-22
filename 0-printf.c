@@ -32,8 +32,6 @@ int _printf(const char *format, ...)
 			return (-1);
 		else if (format[i + 1] == 'c')
 		{
-			if (!va_int)
-				return (-1);
 			_putchar(va_int);
 			count_ch++, ++i;
 		}
