@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdarg.h>
-#include <stddef.h>
 
 /**
  * _printf - Prints a format specifiers variable
