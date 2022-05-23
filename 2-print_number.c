@@ -17,14 +17,13 @@ int print_number(int num)
 		_putchar('-');
 		i++;
 		num = -num;
+		i += print_number(num / 10);
 	}
-
-	if (num > 9)
+	else if (num > 9)
 	{
 		i += print_number(num / 10);
 	}
 	_putchar('0' + (num % 10));
 	i++;
-
 	return (i);
 }
