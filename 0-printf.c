@@ -51,7 +51,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			_putchar(format[i + 1]);
+			_putchar(format[i]);
 			count_ch++, ++i;
 		}
 	}

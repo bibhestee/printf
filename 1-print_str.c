@@ -17,8 +17,10 @@ int print_str(char *str)
 
 	char *c = malloc(sizeof(str) + 1);
 
-	if (c == NULL || str == NULL)
+	if (c == NULL)
 		return (0);
+	if (str == NULL)
+		_printf("(null)");
 
 	c = str;
 	while (c[i] != '\0')
@@ -27,6 +29,6 @@ int print_str(char *str)
 		i++;
 		j++;
 	}
-
+	free(c);
 	return (j);
 }
