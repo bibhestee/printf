@@ -29,6 +29,5 @@ int print_str(char *str)
 		i++;
 		j++;
 	}
-	free(c);
 	return (j);
 }
