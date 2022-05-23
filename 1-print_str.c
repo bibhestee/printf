@@ -20,7 +20,7 @@ int print_str(char *str)
 	if (c == NULL)
 		return (0);
 	if (!str)
-		_printf("(null)");
+		j += _printf("(null)");
 
 	c = str;
 	while (c[i] != '\0')

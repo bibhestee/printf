@@ -21,7 +21,7 @@ int print_number(int num)
 
 	if (num > 9)
 	{
-		print_number(num / 10);
+		i += print_number(num / 10);
 	}
 	_putchar('0' + (num % 10));
 	i++;
