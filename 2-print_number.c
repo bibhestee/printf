@@ -27,5 +27,4 @@ int print_number(int num)
 	i++;
 
 	return (i);
-
 }

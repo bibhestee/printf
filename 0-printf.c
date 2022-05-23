@@ -26,9 +26,7 @@ int _printf(const char *format, ...)
 			_putchar(format[i]);
 			count_ch++;
 		}
-		else if (!format[i + 1])
-			return (-1);
-		else if (format[i + 1] == ' ' && !format[i + 2])
+		else if (!format[i + 1] || (format[i + 1] == ' ' && !format[1 + 2]))
 			return (-1);
 		else if (format[i + 1] == 'c')
 		{
@@ -37,10 +35,8 @@ int _printf(const char *format, ...)
 		}
 		else if (format[i + 1] == 's')
 		{
-			if (!va_char)
-				return (-1);
 			s = va_char;
-			print_str(s);
+			count_ch += print_str(s);
 			++i;
 		}
 		else if (format[i + 1] == '%')
@@ -50,8 +46,13 @@ int _printf(const char *format, ...)
 		}
 		else if (format[i + 1] == 'd' || format[i + 1] == 'i')
 		{
-			print_number(va_int);
+			count_ch += print_number(va_int);
 			++i;
+		}
+		else
+		{
+			_putchar(format[i + 1]);
+			count_ch++, ++i;
 		}
 	}
 	va_end(ap);
