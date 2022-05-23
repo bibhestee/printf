@@ -19,7 +19,7 @@ int print_str(char *str)
 
 	if (c == NULL)
 		return (0);
-	if (str = '\0')
+	if (str == NULL)
 		_printf("(null)");
 
 	c = str;
