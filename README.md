@@ -1,4 +1,4 @@
-<h1> printf function </h1>
+<h1> PRINTF FUNCTION </h1>
 A group project on building a copy of the built-in function ( printf() )
 
 GROUP MEMBERS:
@@ -18,14 +18,12 @@ In the following examples, the main.c files are shown as examples. You can use t
 The prototypes of all your functions should be included in your header file called main.h
 Don’t forget to push your header file
 All your header files should be include guarded</pre>
-<div><h2><b>Note</b></h2> that we will not provide the _putchar function for this project
-GitHub
-<i> There should be one project repository per group. If you clone/fork/whatever a project repository with the same name before the second deadline, you risk a 0% score.</i></div>
-More Info
-<div><h2>
+
+<div>
+<pre>
+<h2>
 <b> Authorized functions and macros </b>
     </h2>
-<pre>
 - write (man 2 write)
 - malloc (man 3 malloc)
 - free (man 3 free)
@@ -87,7 +85,7 @@ int main(void)
 }
 </pre> </div>
 <div>
-<h4> Output </h4>
+<pre><h2> Output </h2>
 Let's try to printf a simple sentence.
 Let's try to printf a simple sentence.
 Length:[39, 39]
@@ -112,10 +110,11 @@ Len:[12]
 Len:[12]
 Unknown:[%r]
 Unknown:[%r]
+</pre>
 </div>
 
-<div> <h4> Resources Used </h4>
-<pre><ul>
+<div><pre> <h2> Resources Used </h2>
+<ul>
 <li><a href="https://alx-intranet.hbtn.io/rltoken/gxdsTXxWMklkBTgY197HYQ"> Secret of Printf </a></l>
 <li><a href="https://linux.die.net/man/3/write"> write (man 2 write) </a></l>
 <li><a href="https://man7.org/linux/man-pages/man3/free.3.html"> malloc (man 3 malloc)</a></l>
