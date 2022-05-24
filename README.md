@@ -5,7 +5,7 @@ GROUP MEMBERS:
 - ABDULLAHI, Abdulbasit
 - THOMAS, Christiana
 
-Requirements
+<pre> <h2>Requirements</h2>
 General
 - Allowed editors: vi, vim, emacs
 - All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
@@ -17,14 +17,15 @@ General
 In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
 The prototypes of all your functions should be included in your header file called main.h
 Don’t forget to push your header file
-All your header files should be include guarded
-<b>Note</b> that we will not provide the _putchar function for this project
+All your header files should be include guarded</pre>
+<div><h2><b>Note</b></h2> that we will not provide the _putchar function for this project
 GitHub
-<i> There should be one project repository per group. If you clone/fork/whatever a project repository with the same name before the second deadline, you risk a 0% score.</i>
+<i> There should be one project repository per group. If you clone/fork/whatever a project repository with the same name before the second deadline, you risk a 0% score.</i></div>
 More Info
+<div><h2>
 <b> Authorized functions and macros </b>
-
-
+    </h2>
+<pre>
 - write (man 2 write)
 - malloc (man 3 malloc)
 - free (man 3 free)
@@ -32,6 +33,7 @@ More Info
 - va_end (man 3 va_end)
 - va_copy (man 3 va_copy)
 - va_arg (man 3 va_arg)
+</pre></div>
 <div> Compilation
 The code is compiled using:
 $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c
@@ -113,6 +115,15 @@ Unknown:[%r]
 </div>
 
 <div> <h4> Resources Used </h4>
-
-<a href="https://alx-intranet.hbtn.io/rltoken/gxdsTXxWMklkBTgY197HYQ"> Secret of Printf </a>
+<pre><ul>
+<li><a href="https://alx-intranet.hbtn.io/rltoken/gxdsTXxWMklkBTgY197HYQ"> Secret of Printf </a></l>
+<li><a href="https://linux.die.net/man/3/write"> write (man 2 write) </a></l>
+<li><a href="https://man7.org/linux/man-pages/man3/free.3.html"> malloc (man 3 malloc)</a></l>
+<li><a href="https://linux.die.net/man/3/free"> free (man 3 free)</a></l>
+<li><a href="https://linux.die.net/man/3/va_start"> va_start (man 3 va_start)</a></l>
+<li><a href="https://linux.die.net/man/3/va_end"> va_end (man 3 va_end)</a></l>
+<li><a href="https://linux.die.net/man/3/va_copy"> va_copy (man 3 va_copy)</a></l>
+<li><a href="https://linux.die.net/man/3/va_arg"> va_arg (man 3 va_arg)</a></l>
+</ul>
+</pre>
 </div>
