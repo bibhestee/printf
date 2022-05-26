@@ -20,8 +20,8 @@ int print_str(char *str)
 	if (c == NULL)
 		return (0);
 	if (!str)
-		b += _printf("(null)");
 
+		b += _printf("(null)");
 	c = str;
 	while ([a] != '\0')
 	{
@@ -29,5 +29,6 @@ int print_str(char *str)
 		a++;
 		b++;
 	}
+
 	return (b);
 }
