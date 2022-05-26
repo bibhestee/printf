@@ -1,6 +1,6 @@
 #include "main.h"
-
-/**
+ 
+ /**
  * print_number - print out a number in base 10
  * @num: pass the number as arg to the func
  * _printf - print out the character
@@ -27,3 +27,4 @@ int print_number(int num)
 	i++;
 	return (i);
 }
+
