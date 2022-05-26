@@ -12,22 +12,22 @@
 
 int print_str(char *str)
 {
-	int i = 0;
-	int j = 0;
+	int a = 0;
+	int b = 0;
 
 	char *c = malloc(sizeof(str) + 1);
 
 	if (c == NULL)
 		return (0);
 	if (!str)
-		j += _printf("(null)");
+		b += _printf("(null)");
 
 	c = str;
-	while (c[i] != '\0')
+	while ([a] != '\0')
 	{
 		_putchar(c[i]);
-		i++;
-		j++;
+		a++;
+		b++;
 	}
-	return (j);
+	return (b);
 }
